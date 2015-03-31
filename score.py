@@ -1,5 +1,3 @@
-import sys
-
 def bubbleSort(alist,size):
     for i in range(size-1,0,-1):
         for j in range(i):
