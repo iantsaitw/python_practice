@@ -6,6 +6,7 @@ def bubbleSort(alist,size):
                     alist[j] = alist[j+1]
                     alist[j+1] = temp
 
+
 def c_average(alist,size):
     sum = 0
     for val in alist:
@@ -20,7 +21,7 @@ def c_variance(alist,average,size):
         sum = sum + tmp
     return sum/size
 
-with open("input.data",'r') as file:
+with open("testcase/input.data",'r') as file:
 
     size = int(file.readline())
     num_sequence = file.readline();
@@ -32,7 +33,7 @@ with open("input.data",'r') as file:
 
 file.close()
 
-with open("output.data",'w') as file:
+with open("testcase/output.data",'w') as file:
 
     for score in score_list:
         file.write(str(score) + ' ')
