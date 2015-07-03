@@ -9,13 +9,12 @@ class student(object):
 
 def read_score(alist,size):
     for i in range(size):
-        line = sys.stdin.readline()
-        line = line.rstrip('\n')
+        line = sys.stdin.readline().rstrip('\n') # read a line from stdin
         data = line.split(' ')
         alist.append(student(str(data[0]), int(data[1]), float(data[2])))
     return alist
 
-num_stu = int(input())
+num_stu = int(input()) # read a int
 studentlist = []
 studentlist = read_score(studentlist, num_stu)
 

@@ -21,6 +21,7 @@ def c_variance(alist,average,size):
         sum = sum + tmp
     return sum/size
 
+# safe for open a file
 with open("testcase/input.data",'r') as file:
 
     size = int(file.readline())
